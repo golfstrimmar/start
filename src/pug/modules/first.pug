@@ -8,13 +8,14 @@ section.first
             i.icon-close2.header__close
             ul.menu__list
               li.menu__item
-                  a.menu__link(href="#today") Компания
+                  a.menu__link(href="#bunner") top
               - 
                       items = [
-                          { title: "Компания", url: "#history"},
-                          { title: "Компания", url: "#mission"},
-                          { title: "Компания", url: "#strategy"},
-                          { title: "Компания", url: "#values"},
+                          { title: "today", url: "#today"},
+                          { title: "history", url: "#history"},
+                          { title: "mission", url: "#mission"},
+                          //- { title: "Компания", url: "#strategy"},
+                          //- { title: "Компания", url: "#values"},
                           //- { title: "Компания", url: "#manifest"},
                           //- { title: "Компания", url: "#team"},
                         ]
@@ -30,7 +31,7 @@ section.first
           i.icon-menu1.header__burger
 
   //- вариант баннера без слайдера---------------
-  //- section.bunner
+  //- section.bunner#bunner
   //-     .bunner__bg
   //-       picture
   //-           source(srcset="assets/img/paralax.jpg, assets/img/paralax@2.jpg 2x,  assets/img/paralax@3.jpg 3x,"  type="image/jpg"  media="(min-width: 1200px)")
@@ -45,7 +46,7 @@ section.first
   //-           p и способы борьбы с конкурирующими компаниями
 
   //- вариант баннера со слайдером-----------------
-  section.bunner-slider
+  section.bunner-slider#bunner
           .slider
             ul.slider__slider.slider__body.slider-js-1
                 li.slider__item.slider-card

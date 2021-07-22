@@ -12,7 +12,7 @@ import './js/scrolling'
 import './js/first'
 // import './js/header'
 // import './js/select'
-// import './js/start-button'
+import './js/start-button'
 // import "./js/jquery.nicescroll.min";
 // import "./js/header";
 // import './js/modal'

@@ -30,7 +30,7 @@ $(".art_inner__vidget").on("click", "a", function (event) {
     top = $(id).offset().top;
   $("a").removeClass("menu__link--active");
   $(this).addClass("menu__link--active");
-  $("body,html").animate({ scrollTop: top }, 800);
+  $("body,html").animate({ scrollTop: top - 80}, 800);
 });
 
 
@@ -41,7 +41,7 @@ $(".menu__link").on("click", function (event) {
  $("a").removeClass("menu__link--active");
   $(this).addClass("menu__link--active");
 $('a[href="#' + id + '"').addClass("menu__link--active");
-  $("body,html").animate({ scrollTop: top }, 800);
+  $("body,html").animate({ scrollTop: top - 80}, 800);
 
  setTimeout(function () {
    $(".menu").removeClass("menu-active")
