@@ -216,18 +216,10 @@
     z-index: 2
     position: relative
 .bunner__bg
-  position: relative
   position: absolute
   top: 0
   left: 0
   +pro
-  img
-    +pro
-    object-fit: cover
-    object-position: top
-    position: absolute
-    top: 0
-    left: 0
 .bunner__body
   +fdc
   padding: 200px 300px 0 60px
@@ -272,23 +264,17 @@
   .slider-card
     position: relative
   .slider-card__img
-      position: relative
-      position: absolute
-      top: 0
-      left: 0
-      +pro
-      img
-        +pro
-        object-fit: cover
-        object-position: top
-        position: absolute
-        top: 0
-        left: 0
+    z-index: 1
+    +pro
+    position: absolute
+    top: 0
+    left: 0
   .slider-card__body
     +fdc
     padding: 350px 90px
     position: relative
-    z-index: 2
+    z-index: 5
+    +bg(transparent)
   .slider-card__title
     margin: 0 0 40px 0
     h2
