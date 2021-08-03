@@ -4,7 +4,7 @@ body
   font-style: normal
   font-weight: 500
   font-size: 18px
-  line-height: 27px
+  line-height: 1
   color: #000000
   
 
@@ -26,7 +26,7 @@ h1
     line-height: 1.2
   @media (max-width: 999px)
     font-size: 30px
-    line-height: 1.2
+//     line-height: 1.2
   
 h2 
   font-size: 40px
@@ -36,6 +36,29 @@ h2
     font-size: 30px
   @media (max-width: 999px)
     font-size: 20px
+
+
+
+
+
+
+.title 
+  width: 100%
+  +jucc	
+
+.title 
+  h2 
+    font-size: 40px
+    +f700
+    +tu
+@media (min-width: 768px) and (max-width: 1199px)
+  .title 
+    h2 
+      font-size: 30px
+@media (max-width: 767px)
+  .title 
+    h2 
+      font-size: 20px
 
 .btn 
   border: 1px solid transparent

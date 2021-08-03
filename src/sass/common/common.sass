@@ -1,10 +1,10 @@
 *
-  outline: 1px solid green
+  // outline: 1px solid green
   box-sizing: border-box
 
 
 .container
-  outline: 1px solid #4164ff
+  // outline: 1px solid #4164ff
 //------.container--------
 .container
   max-width: 1230px
@@ -51,14 +51,28 @@ a
   display: block
 
 
-.title 
-  width: 100%
-  +jucc	
 
 
+
+
+
+img 
+  opacity: 1
+  transition: opacity .3s
+ 
+img[data-src] 
+  opacity: 0
+
+  
+  
 .imgs
   overflow: hidden
   position: relative
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
   img
     height: 100%
     width: 100%
@@ -67,3 +81,7 @@ a
     position: absolute
     top: 0
     left: 0
+
+
+
+

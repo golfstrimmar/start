@@ -2,7 +2,124 @@ import $ from "jquery";
 // import "./slick.js";
 
 
+
 $(Document).ready(function() {
+
+    $(".slider-js-posts-side").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 3,
+        speed: 1500,
+        easing: "ease",
+        // cssEase: "linear",
+        centerMode: false,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+        // centerMode: true,
+        infinite: true,
+        //  initialSlide: 1,
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1420,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                },
+            },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+
+            },
+        },
+    ],
+    });
+
+
+    $(".slider-js-posts-low").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 3,
+        speed: 1500,
+        easing: "ease",
+        // cssEase: "linear",
+        centerMode: false,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+        // centerMode: true,
+        infinite: true,
+        //  initialSlide: 1,
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
+        responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+
+            },
+        },
+    ],
+    });
+    
+    $(".slider-js-posts-projects").slick({
+        // dots: true,
+        // arrows: false,
+        slidesToShow: 3,
+        speed: 1500,
+        easing: "ease",
+        // cssEase: "linear",
+        centerMode: false,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
+        // centerMode: true,
+        infinite: true,
+        //  initialSlide: 1,
+        // pauseOnFocus: true,
+        // pauseOnHover: true,
+        responsive: [
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+
+            },
+        },
+    ],
+    });
+
+
+
+
     $(".slider-js-1").slick({
         // dots: true,
         arrows: false,
