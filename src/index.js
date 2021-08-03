@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Plyr from "plyr";
+// import Plyr from "plyr";
 
 // ==============================================
 
@@ -41,7 +41,7 @@ import './css/fonts.css'
 
 
 
-import './css/plyr.css';
+// import './css/plyr.css';
 
 
 
