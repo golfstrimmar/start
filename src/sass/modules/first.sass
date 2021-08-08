@@ -7,7 +7,7 @@
   position: fixed
   width: 100%
   height: 80px
-  +bg(rgba(245,245,245,1))
+  background: rgba(245,245,245,1)
   display: grid
   align-items: center
   .container
@@ -25,7 +25,7 @@
   position: fixed
   width: 100%
   height: 60px
-  +bg(rgba(245,245,245, .9))
+  background: rgba(245,245,245, .9)
 
 
 // =======================================================
@@ -77,7 +77,7 @@
     +fdc
     +jucs
     +alie
-    +bg(rgba(0,0,0,.95))
+    background: rgba(0,0,0,.95)
     z-index: 1000
     transition: all 0.2s ease-in-out
 
@@ -127,11 +127,11 @@
   text-transform: uppercase
   &:hover
     color: white
-    +bg(lighten($active,30%))
+    background: lighten($active,30%)
     box-shadow: 0px 0px 20px lighten($active,60%)!important
   &:focus
     +border(1px , darken($active,10%)!important)
-    +bg(lighten($active,10%))
+    background: lighten($active,10%)
     box-shadow: 0px 0px 20px lighten($active,60%)!important
     color: white
   @media (max-width: 999px)
@@ -139,7 +139,7 @@
   
 
 .menu__link--active
-  +bg($active)
+  background: $active
   color: white
 .header__info
   grid-area: info
@@ -172,7 +172,7 @@
   position: relative
   margin: 0  0 0 10px 
   +jucb
-  +bg(white)
+  background: white
   input[ type = "text"]
     height: 100%
     padding: 0 0 0 10px
@@ -187,7 +187,7 @@
     width: 35px
     height: 25px
     font-size: 0
-    +bg(transparent)
+    background: transparent
     z-index: 3
     &:hover
       cursor: pointer

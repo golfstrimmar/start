@@ -89,7 +89,7 @@
     &:hover
       cursor: pointer
       border: none
-      +bg($active)
+      background: $active
       &:after
         color: white
   .slick-prev
@@ -117,13 +117,13 @@
       width: 10px
       height: 10px
       border-radius: 50%
-      +bg($active)
+      background: $active
       transition: all 0.2s ease-in-out
       &:hover
         cursor: pointer
-        +bg( lighten($active, 30%) )  
+        background: lighten($active, 30%) 
     li.slick-active
-      +bg(transparent)
+      background: transparent
       +border(3px ,$active )
   
 
