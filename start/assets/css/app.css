@@ -1831,7 +1831,8 @@ img[data-src] {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, .4);
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, .4);
-  margin: 10px 0
+  margin: 10px 0;
+  position: relative;
 }
 
 .projects-item__body {

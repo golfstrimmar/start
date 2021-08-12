@@ -1,12 +1,5 @@
-
-  
-  
-$fone: lime
-$bej: blue
-$grey: grey
-$white: white
 input
-  +bg( #FFFFFF)
+  background: #FFFFFF
   padding: 0 0 0 15px
   transition: all 0.2s ease-in-out
   +border(1px,transparent)
@@ -20,8 +13,8 @@ input
     // transform: translate(0,-50%) rotate(0deg)
     transition: all 0.2s ease-in-out
   &:focus
-    +bg($fone!important)
-    border: 1px solid darken($bej,20%)
+    background: lime!important
+    border: 1px solid darken(blue,20%)
     border-radius: 5px
     &::placeholder
       opacity: 0
@@ -190,7 +183,7 @@ input[type="radio"]:checked + label:after
   &__text
     flex: 0 1 100% 
     font-weight: normal
-    color: $grey
+    color: grey
   &__number
     flex: 0 1 100% 
     +alic
@@ -206,7 +199,7 @@ input[type="radio"]:checked + label:after
     margin: 0 0 10px 0
   &__title 
     font-weight: normal
-    color: $grey
+    color: grey
   &__number
     +alic
     font-weight: normal
@@ -221,7 +214,7 @@ input[type="radio"]:checked + label:after
     font-weight: normal
     font-size: 20px
     line-height: 23px
-    color: $grey
+    color: grey
     display: inline-block
     margin: 0 0 0 auto
 
@@ -233,7 +226,7 @@ input[type="radio"]:checked + label:after
     padding: 21px 0
     +alic
     +jucb
-    border-top: 1px solid $bej
+    border-top: 1px solid blue
 
   &__icon 
     width: 40px
@@ -258,7 +251,7 @@ input[type="radio"]:checked + label:after
     height: 48px
   &__line
     &_last
-      border-bottom: 1px solid $bej
+      border-bottom: 1px solid blue
  
 .news-right_calc
   margin-bottom: 0
@@ -267,11 +260,11 @@ input[type="radio"]:checked + label:after
 .news-right__title_calc
   position: relative
   z-index: 2 
-  color: $white
+  color: white
 .news-right__text_calc 
   position: relative
   z-index: 2 
-  color: $white
+  color: white
   +alic
 
 
