@@ -3,20 +3,15 @@
   // +columns(repeat(3, 1fr))
 // .posts__img
 //   padding: 0 0 57% 0
-.posts__item
-  position: relative
+
   
-.posts__img
-  &:after
-    content: ''
-    position: absolute
-    background: rgb(0,0,0,.4)
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
 
 
+
+
+//  ------------------------------------- 
+.posts-item
+  position: relative
 
 
 // здесь задается высота слайдера!!!
@@ -27,7 +22,15 @@
     padding: 20px 10px
     min-height: 300px
 
-
+.posts-item__img
+  &:after  
+    content: ''
+    position: absolute
+    background: rgb(0,0,0,.4)
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
 
 
 .posts-item__title 
@@ -35,13 +38,10 @@
   padding: 0 0 20px 0
   h3 
     color: white
-    font-size: 20px
-    +tu
 
     
 .posts-item__text
     color: white
-    font-size: 14px
 
 .posts-item__button
   margin: 10px 0 0 0
@@ -54,6 +54,16 @@
     height: 40px
     +br
     +tu
+
+// --------------------------
+
+
+
+
+
+
+
+
 
 // версия с кнопками по бокам
 #posts
@@ -97,9 +107,4 @@
       right: 70px
 
 
-@media (max-width: 767px)
-  .posts-item__title 
-    h3 
-      font-size: 15px
-  .posts-item__text
-    font-size: 12px
+

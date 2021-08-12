@@ -7,11 +7,17 @@
   // +grid(30px)
   // +columns(repeat(3, 1fr))
 .projects__item
-  padding: 20px 15px
+  margin: 10px 0
+
+
+
+
+// ---------------------------------------------------
+
 .projects-item
   +br
   box-shadow: 0 0 8px 4px rgb(0,0,0, .4)
-  margin: 10px 0
+  padding: 20px 15px
 .projects-item__img
 .projects-item__body
   min-height: 300px
@@ -34,6 +40,13 @@
     font-size: 20px
     +tu
     +br
+
+// -----------------------------------------------------
+
+
+
+
+
 #projects
   .slick-slide
     margin: 0 20px
@@ -63,3 +76,9 @@
       left: auto
       right: 70px
 
+
+  
+@media (max-width: 767px)
+  .projects-item__button
+    a
+      width: 100%  
