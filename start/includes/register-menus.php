@@ -9,6 +9,6 @@ array(
 )
 );
 
-function add_menuclass($ulclass) {
-return preg_replace('/<a /', '<a class="menu__link-header" ' , $ulclass); }
-  add_filter('wp_nav_menu','add_menuclass');
+// function add_menuclass($ulclass) {
+// return preg_replace('/<a /', '<a class="menu__link-header" ' , $ulclass); }
+//   add_filter('wp_nav_menu','add_menuclass');

@@ -1,7 +1,7 @@
 <section class="projects" id="projects">
       <div class="container">
-        <div class="projects__title title">
-          <h2>Проекты</h2>
+        <div class="projects__title">
+          <h2 class="_f-2">Проекты</h2>
         </div>
         <ul class="projects__body slider-js-posts-projects slider">
         
@@ -30,16 +30,15 @@
 
 
           <li class="projects__item projects-item">
-            <div class=" imgs">
+          <div class=" imgs">
                  <img src="<?php echo $image?>"  alt="img">
             </div>
             <div class="projects-item__body">
-              <div class="projects-item__title"><?php echo $post_title ?></div>
-              <div class="projects-item__text"><?php the_excerpt(); ?></div>
+              <div class="projects-item__title  _f-4"><?php echo $post_title ?></div>
+              <div class="projects-item__text  _f-5"><?php the_excerpt(); ?></div>
               <div class="projects-item__button"><a class="btn btn--success" href="<?php echo $link ?>">Кнопка</a></div>
             </div>
           </li>
-     
 
 <?php 
   	}
@@ -55,3 +54,12 @@
         </ul>
       </div>
     </section>
+
+
+
+
+
+
+
+
+

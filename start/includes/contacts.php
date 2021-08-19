@@ -1,7 +1,7 @@
-<div class="popup">
-      <div class="popup__overlay">
-        <div class="popup__inner">
-          <div class="form">
+<section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__body">
+          <form class="contacts__form form">
             <div class="form__item"><input id="name" required="" placeholder=" Denzel Washington"><label for="name">What
                 is your name?</label></div>
             <div class="form__item"><input id="email" type="email" required=""
@@ -15,7 +15,7 @@
             </div>
             <div class="form__item"><input class="submit-button btn btn--success" type="submit"
                 placeholder="Send message"></div>
-          </div><i class="icon-close21 popup__close popup__close"></i>
+          </form>
         </div>
       </div>
-    </div>
+    </section>

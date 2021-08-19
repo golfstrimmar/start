@@ -56,7 +56,7 @@
 
           <nav class="header__menu menu">
 
-						<i class="icon-close2 header__close"></i>
+						<i class="icon-close21 header__close"></i>
            
 <?php wp_nav_menu([
 'theme_location' => 'menu-start',
@@ -78,11 +78,11 @@
          
           </nav>
           <div class="header__info info"><a class="info_phone" href="#!">+7(000) 123 45 65</a>
-            <form class="info_search">
-							<input placeholder="Поиск">
-							<i class="icon-Vector"></i>
-							<input type="submit">
-						</form>
+					<form class="info_search">
+              <input type="search" placeholder="Поиск">
+              <i class="icon-Vector"></i>
+              <input type="submit">
+            </form>
           </div>
 
 					<i class="icon-menu1 header__burger"></i>
