@@ -1,0 +1,31 @@
+<svg width="0" height="0" class="hidden">
+
+ <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="clock">
+    <path d="M10.989 0C4.917 0 0 4.928 0 11s4.917 11 10.989 11C17.072 22 22 17.072 22 11S17.072 0 10.989 0zM11 19.8A8.798 8.798 0 012.2 11c0-4.862 3.938-8.8 8.8-8.8s8.8 3.938 8.8 8.8-3.938 8.8-8.8 8.8zm.55-14.3H9.9v6.6l5.775 3.465.825-1.353-4.95-2.937V5.5z" fill="#000"></path>
+  </symbol>
+
+
+<symbol id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+
+<path d="M21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0z"  stroke-width="2" stroke-linecap="round"/>
+
+</symbol>
+
+<svg  id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+<path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+</svg>
+
+
+<svg   id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+<path d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7z" />
+</svg>
+
+
+
+
+
+
+
+
+
+</svg>

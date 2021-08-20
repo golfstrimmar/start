@@ -8,10 +8,7 @@
   width: 100%
   height: 80px
   background: rgba(245,245,245,1)
-  display: grid
-  align-items: center
-  .container
-    height: 80%
+  +alic
   @media (min-width: 1000px) and (max-width: 1199px)
     height: 60px
   @media (max-width: 999px)
@@ -31,37 +28,58 @@
 // =======================================================
 
 .header__body
-  margin: 0 auto
   position: relative
   height: 100%
   display: grid
   grid-template-columns: 100px 1fr minmax(340px, auto)
-  grid-template-rows:  100%
-  grid-template-areas: "logo menu info"
   @media (min-width: 1000px) and (max-width: 1199px)
     grid-template-columns: 100px 1fr minmax(260px, auto)
   @media (max-width: 999px)
     grid-template-columns: 100px 1fr
-    // margin: 0 10px
+
 //-------------
 .header__burger
-  font-size: 20px
   display: none
+  svg
+      width: 30px
+      height: 30px
   &:hover
     cursor: pointer
   @media (max-width: 999px)
     display: inline-block
     color: #181818
-    +absolute(20px,20px,50%,auto,0,0%,-50%)
-//-------------
+    position: absolute
+    top: 50%
+    transform: translate(0%, -50%) 
+    right:  0
+
+.header__close
+  display: none
+  svg
+    width: 30px
+    height: 30px
+
+  @media (max-width: 999px)
+    display: block
+    +absolute(auto,auto,10px,auto,10px,0%,0%)
+    position: absolute
+    top: 10px
+    right:  10px
+    svg  
+      fill: white
+    &:hover
+      cursor: pointer
+
+//------определяет высоту header -------
 .header__logo
-  grid-area: logo
-  img
-    height: 100%
+  svg
+    height: 40px
+    width: 40px
+
+//  -------------------   
 .header__menu
   margin: 0 30px 0 0
   position: relative
-  grid-area: menu
   @media (min-width: 1000px) and (max-width: 1199px)
     margin: 0 20px 0 0
   @media (max-width: 999px)
@@ -77,19 +95,11 @@
     +fdc
     +jucs
     +alie
-    background: rgba(0,0,0,.95)
+    background: rgba(0,0,0,  .95)
     z-index: 1000
     transition: all 0.2s ease-in-out
 
-.header__close
-  display: none
-  font-size: 20px
-  @media (max-width: 999px)
-    display: block
-    +absolute(auto,auto,10px,auto,10px,0%,0%)
-    color: white
-    &:hover
-      cursor: pointer
+
 
 
 .menu-active
@@ -147,9 +157,9 @@
 
 
 
-
+// ----------------------
 .header__info
-  grid-area: info
+  // grid-area: info
 .info
   +alic
   +jucb
@@ -171,7 +181,7 @@
     
 .info_search
   +alic
-  height:25px
+  height: 25px
   position: relative
   margin: 0  0 0 10px 
   +jucb
@@ -191,11 +201,19 @@
     z-index: 3
     &:hover
       cursor: pointer
-  i
-    color: #181818
-    font-size: 20px
+ 
+  svg
+    fill: none
+    stroke: #181818
+    width: 15px
+    height: 15px
     z-index: 2
-    +absolute(auto,auto,50%,auto,10px,0%,-50%)
+    position: absolute
+    top: 50%
+    transform: translate(0%, -50%) 
+    right: 5px
+    opacity: .4
+
   
   @media (min-width: 1000px) and (max-width: 1199px)
     margin:  0
