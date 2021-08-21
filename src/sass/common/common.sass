@@ -2,9 +2,23 @@
   outline: 1px solid green
   box-sizing: border-box
 
+body
+  background: white
+  font-family: 'Poppins', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 1
+  color: #000000
+  @media (min-width: 1000px) and (max-width: 1199px)
+    font-size: 15px
+  @media (max-width: 999px)
+    font-size: 13px
+
 
 .container
   outline: 1px solid #4164ff
+
 //------.container--------
 .container
   max-width: 1230px
@@ -53,6 +67,9 @@ a
 
 
 
+h1,h2,h3,h4, h5, h6
+  display: inline-block
+  margin: 0 auto
 
 
 
@@ -128,8 +145,6 @@ img[data-src]
     width: 100px
     margin: 0 auto
     height: 40px
-    +br
-    +tu
 
     
 svg

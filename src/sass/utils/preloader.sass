@@ -12,12 +12,16 @@ $loadcolor: $active
 
 .cssload-loader
   position: relative
-  @include absolute( 100px, 100px, 50%,  50%,  null,-50%,-50%)
+  width: 100px
+  height: 100px
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 2
   perspective: 780px
-  box-shadow: 0px 0 40px 10px lighten($loadcolor, 80%)
+  box-shadow: 0 0 40px 10px lighten($loadcolor, 80%)
   background: transparent
   border-radius: 50%  
-  position: relative
   &:after
    content: ""
    background: radial-gradient(circle at 100px -50px,white, $loadcolor)

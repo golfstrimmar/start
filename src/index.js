@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 // import Plyr from "plyr";
 
 // ==============================================
@@ -8,16 +8,18 @@ import $ from 'jquery';
 
 
 import './js/common'
-import './js/scrolling'
-import './js/first'
+// import './js/scrolling'
+// import './js/first'
 // import './js/header'
 // import './js/select'
-import './js/start-button'
+// import './js/start-button'
 // import "./js/jquery.nicescroll.min";
 // import "./js/header";
-import './js/modal'
+// import './js/modal'
 // import './js/contacts'
 // import "./js/polzunki";
+//import "./js/sliderCarousel-1";
+import "./js/slider-infinity";
 
 
 
@@ -31,9 +33,9 @@ import './js/modal'
 
 // slick;
 // import "slick-carousel";
-import "./js/slick.js";
-import "./js/mySlick.js";
-import './css/slick.css';
+// import "./js/slick.js";
+// import "./js/mySlick.js";
+// import './css/slick.css';
 
 
 import './css/fonts.css'

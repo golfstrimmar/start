@@ -1,13 +1,13 @@
 //-- этот import нужно подключать в каждый файл, чтобы jquery работала
-import $ from "jquery";
+// import $ from "jquery";
 // import Plyr from "plyr";
 // ------------------------------------------------
 
 
 
-$(window).on("load", function() {
-    $(".cssload").delay(200).fadeOut("slow");
-});
+// $(window).on("load", function() {
+//     $(".cssload").delay(200).fadeOut("slow");
+// });
 
 // $(document).ready(function (e) {
 

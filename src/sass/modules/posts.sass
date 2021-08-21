@@ -34,8 +34,9 @@
         cursor: pointer
         background: lighten($active, 30%) 
     li.slick-active
-      background: transparent
-      +border(3px ,$active )
+        background: transparent
+        border: 3px solid $active
+
 
 //  версия с кнопками внизу 
 //  версия с кнопками внизу 
@@ -78,8 +79,8 @@
         cursor: pointer
         background: lighten($active, 30%) 
     li.slick-active
-      background: transparent
-      +border(3px ,$active )
+        background: transparent
+        border: 3px solid $active
 
 @media (max-width: 1199px)
   #posts-low
