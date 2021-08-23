@@ -19,7 +19,8 @@ import './js/common'
 // import './js/contacts'
 // import "./js/polzunki";
 //import "./js/sliderCarousel-1";
-import "./js/slider-infinity";
+// import "./js/slider-infinity";
+import "./js/infinity-slider-opacity";
 
 
 
