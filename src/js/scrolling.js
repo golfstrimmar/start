@@ -15,7 +15,6 @@ import $ from "jquery";
 
      if (scroll > top && scroll < bottom) {
        $("a.menu__link").removeClass("menu__link--active");
-       $('a[href="#' + id + '"').addClass("menu__link--active");
        $("a.art_inner-vidget-item__link").removeClass("menu__link--active");
        $('a[href="#' + id + '"').addClass("menu__link--active");
 

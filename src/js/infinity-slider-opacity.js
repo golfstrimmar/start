@@ -15,7 +15,23 @@ const MyInfinity = () => {
 
     slider();
 
+    left.onclick = function(){
+        if (current-1 === -1){
+            current= singles .length-1
+        }else{
+            current--
+        }
+        slider()
+    }
 
+    right.onclick = function(){
+        if (current+1 === singles .length){
+            current= 0
+        }else{
+            current++
+        }
+        slider()
+    }
 
 //
 // var countActive = true
@@ -35,23 +51,7 @@ const MyInfinity = () => {
 
 
 
-    left.onclick = function(){
-        if (current-1 === -1){
-            current= singles .length-1
-        }else{
-            current--
-        }
-        slider()
-    }
 
-    right.onclick = function(){
-        if (current+1 === singles .length){
-            current= 0
-        }else{
-            current++
-        }
-        slider()
-    }
 
 };
 MyInfinity();

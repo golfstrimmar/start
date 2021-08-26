@@ -1,5 +1,4 @@
-//-- этот import нужно подключать в каждый файл, чтобы jquery работала
-// import $ from "jquery";
+import $ from "jquery";
 // import Plyr from "plyr";
 // ------------------------------------------------
 
@@ -9,13 +8,13 @@
 //     $(".cssload").delay(200).fadeOut("slow");
 // });
 
-// $(document).ready(function (e) {
+$(document).ready(function (e) {
+    $("input").on("blur", function () {
+        $(this).next("i").css("opacity", "0")
+    });
+    });
 
-//     $("input").on("blur", function () {
-//         $(this).next("i").css("opacity", "0")
 
-//     }); 
-//     })
 [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
     img.setAttribute('src', img.getAttribute('data-src'));
     img.onload = function () {
