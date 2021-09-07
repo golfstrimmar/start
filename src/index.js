@@ -13,9 +13,11 @@ import './js/first'
 // import './js/select'
 // import './js/start-button'
 // import "./js/jquery.nicescroll.min";
-import './js/modal'
+import './js/popup'
+import './js/quiz'
 // import './js/contacts'
-// import "./js/polzunki";
+import "./js/polzunki";
+import "./js/tabs";
 //import "./js/sliderCarousel-1";
 // import "./js/slider-infinity";
 // import "./js/infinity-slider-opacity";

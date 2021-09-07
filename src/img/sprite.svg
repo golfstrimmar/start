@@ -20,7 +20,17 @@
 <path d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7z" />
 </svg>
 
+<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" id="arrow-left">
+        <path d="M13.9995 25L3 13.6857L14 0.999999" ></path>
+</symbol>
 
+<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" id="arrow-right">
+        <path d="M2.00051 25L13 13.6857L2 0.999999" ></path>
+</symbol>
+
+<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" id="arrow-down">
+        <path d="M17 2L9.45714 8.99968L2 2"  stroke-width="3"></path>
+</symbol>
 
 
 
