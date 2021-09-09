@@ -44,7 +44,10 @@ document.querySelector('.header__close').addEventListener('click', function (eve
 // ---------------------------------------------
 window.onresize = function () {
   if (window.innerWidth >= 999) {
-    menu.querySelector('.header__info').remove();
+    if(menu.querySelector('.header__info')){
+      menu.querySelector('.header__info').remove();
+    }
+
     menu.classList.remove("menu-active");
     document.querySelector('.info').classList.remove("info-active");
     document.querySelector('body').classList.remove("lock");

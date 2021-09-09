@@ -1,6 +1,6 @@
-//вызывается  только на главной странице
 
-if(window.location.pathname == '/') {
+
+// if(window.location.pathname == '/') {//вызывается  только на главной странице
 
     const MyQuiz = () => {
         let Q = document.querySelector('.Q-js');
@@ -141,9 +141,12 @@ if(window.location.pathname == '/') {
 
         // -------/-------MyQuiz
     };
-
+let Block = document.querySelectorAll('.QBlock')
+if (Block.length) {
     MyQuiz();
-
 }
+
+
+// }
 
 

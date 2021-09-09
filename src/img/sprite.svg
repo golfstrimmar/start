@@ -11,20 +11,20 @@
 
 </symbol>
 
-<svg  id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+<symbol  id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
 <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
-</svg>
+</symbol>
 
 
-<svg   id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+<symbol   id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
 <path d="M15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7z" />
-</svg>
+</symbol>
 
-<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" id="arrow-left">
+<symbol id="arrow-left" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" >
         <path d="M13.9995 25L3 13.6857L14 0.999999" ></path>
 </symbol>
 
-<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" id="arrow-right">
+<symbol id="arrow-right" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" >
         <path d="M2.00051 25L13 13.6857L2 0.999999" ></path>
 </symbol>
 

@@ -1,5 +1,4 @@
 // ============tabs ==================
-if(window.location.pathname == '/') {
 
     const MyTabs = () => {
         let tabs = document.querySelector('.tabs-container-js');
@@ -36,7 +35,11 @@ if(window.location.pathname == '/') {
 
 
     };
+
+let tabs = document.querySelectorAll('.tabs-container-js');
+if (tabs.length) {
     MyTabs();
-
-
 }
+
+
+
