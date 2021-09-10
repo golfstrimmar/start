@@ -15,7 +15,8 @@ import './js/popup'
 import './js/quiz'
 import "./js/polzunki";
 import "./js/tabs";
-import "./js/slider-track";
+import "./js/мои слайдеры на js";
+
 
 
 import "./js/slick.js";
@@ -31,7 +32,7 @@ import './sass/style.sass';
 
 
 
-
+// import "./js/задержка при resize окна";
 // import './js/select'
 // import './js/start-button'
 // import "./js/jquery.nicescroll.min";
