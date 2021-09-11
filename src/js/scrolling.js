@@ -2,6 +2,29 @@ import $ from "jquery";
 // ------------------------------------------------
 
 
+
+// let Parent = document.querySelector('html');
+// let singles = Array.from(document.getElementsByClassName('button-scroll'))
+// singles.forEach((cell) => {
+//     let id = cell.getAttribute("value")
+//     let hiddenElement = document.querySelector(id);
+//
+//     function handleButtonClick() {
+//         hiddenElement.scrollIntoView({block: 'start', behavior: 'smooth'});
+//     }
+//
+//     cell.addEventListener('click', handleButtonClick);
+// })
+
+
+
+
+
+
+
+
+
+
 // --------------------------------------------------------------------------
  $(window).scroll(function () {
    var $section = $("section");
@@ -16,7 +39,7 @@ import $ from "jquery";
      if (scroll > top && scroll < bottom) {
        $("a.menu__link").removeClass("menu__link--active");
        $("a.art_inner-vidget-item__link").removeClass("menu__link--active");
-       $('a[href="#' + id + '"').addClass("menu__link--active");
+       $('a[rel="#' + id + '"').addClass("menu__link--active");
 
      }
    });
@@ -25,7 +48,7 @@ import $ from "jquery";
 
 $(".art_inner__vidget").on("click", "a", function (event) {
   event.preventDefault();
-  var id = $(this).attr("href"),
+  var id = $(this).attr("rel"),
     top = $(id).offset().top;
   $("a").removeClass("menu__link--active");
   $(this).addClass("menu__link--active");
@@ -35,7 +58,7 @@ $(".art_inner__vidget").on("click", "a", function (event) {
 
 $(".menu__link").on("click", function (event) {
   event.preventDefault();
-  var id = $(this).attr("href"),
+  var id = $(this).attr("rel"),
     top = $(id).offset().top;
  $("a").removeClass("menu__link--active");
   $(this).addClass("menu__link--active");

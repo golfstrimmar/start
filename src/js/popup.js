@@ -1,46 +1,64 @@
-function initPopup() {
-    let pop = document.querySelector('#popup');
-    let close = document.querySelector('.popup__close');
 
-    pop.style.cssText= " display: block;  ";
-    pop.animate([
-        { opacity:  '0' },
-        { opacity: '1' }
-    ], {
-        duration: 200,
-    })
-    setTimeout(()=>{
-        pop.style.cssText= "opacity: 1;  display: block; ";
-    }, 200);
+function initPopupCommon() {
+    let Parent = document.querySelector('html');
+    let singles = Array.from(document.getElementsByClassName('popup-init-js'))
 
+    singles.forEach((cell) => {
 
-    document.querySelector("body").style.cssText= "overflow: hidden"
-    let overlay =  document.querySelector('.popup__overlay');
+// ----------------------------------
+        function initCommon(){
+            let id =cell.getAttribute("rel")
+            let popup =     document.querySelector(id);
+            popup.animate([
+                { opacity:  '0' },
+                { opacity: '1' }
+            ], {
+                duration: 200,
+            })
+            setTimeout(()=>{
+                popup.style.cssText= "opacity: 1;  display: block; ";
+            }, 200);
+            document.querySelector("body").style.cssText= "overflow: hidden"
+            let overlay =  popup.querySelector('.popup__overlay');
+            let close = popup.querySelector('.popup__close');
 
+            close.addEventListener('click',(e) =>{
+                document.querySelector("body").style.cssText= "overflow: visible"
+                popup.animate([
+                    { opacity:  '1' },
+                    { opacity: '0' }
+                ], {
+                    duration: 200,
+                })
+                setTimeout(()=>{
+                    popup.style.cssText= "opacity: 0;  display: none; ";
+                }, 200);
+            });
 
-    close.addEventListener('click',(e) =>{
-        pop.style.cssText= "display: none; opacity: 0;  "
-        document.querySelector("body").style.cssText= "overflow: visible"
-    });
+            overlay.addEventListener('click',(e) =>{
+                if (e.target.classList.contains("popup__overlay")) {
+                    popup.animate([
+                        { opacity:  '1' },
+                        { opacity: '0' }
+                    ], {
+                        duration: 200,
+                    })
+                    setTimeout(()=>{
+                        popup.style.cssText= "opacity: 0;  display: none; ";
+                    }, 200);
+                    document.querySelector("body").style.cssText= "overflow: visible"
+                }
+            });
 
-
-    overlay.addEventListener('click',(e) =>{
-        if (e.target.classList.contains("popup__overlay")) {
-            console.log('block-6-form__body')
-            pop.style.cssText= "display: none; opacity: 0;  "
-            document.querySelector("body").style.cssText= "overflow: visible"
         }
-    });
+// -----------------------------
+        cell.addEventListener('click',(e) =>{
+            initCommon();
+        });
+    })
 }
-document.querySelectorAll('.popup-init-js').forEach((cell)=>{
-    cell.addEventListener('click',(e) =>{
-        initPopup()
-    });
 
-})
-
-
-
+initPopupCommon();
 
 
 

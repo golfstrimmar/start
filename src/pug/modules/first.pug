@@ -10,20 +10,13 @@ header.header
                         use(xlink:href='/assets/img/sprite.svg#close')
                 ul.menu__list
                     li.menu__item
-                        a.menu__link(href="#bunner") Home
-                    -
-                        items = [
-                            {title: "posts", url: "#posts"},
-                            {title: "projects", url: "#projects"},
-                            //- { title: "mission", url: "#mission"},
-                            // - { title: "Компания", url: "#strategy"},
-                            // - { title: "Компания", url: "#values"},
-                            //- { title: "Компания", url: "#manifest"},
-                            //- { title: "Компания", url: "#team"},
-                        ]
-                    each item in items
-                        li.menu__item
-                            a.menu__link(href=item.url)=item.title
+                        a.menu__link(href="#!" rel="#bunner").button-scroll Home
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#posts").button-scroll Posts
+                    li.menu__item
+                        a.menu__link(href="#!" rel="#galery").button-scroll Projects
+
+
             .header__info.info
                 a.info_phone(href='#!') +7(000) 123 45 65
                 form.info_search
