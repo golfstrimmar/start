@@ -34,6 +34,7 @@
 	+alic
 	padding: 0 45px
 	box-shadow: 0 50px 100px 0 rgba(40, 40, 40, 0.15)
+	position: relative
 
 	span
 		transition: all .5s ease-in-out
@@ -41,8 +42,12 @@
 	svg
 		width:  20px
 		height: 20px
-		transition: all .5s ease-in-out
+		transition: all .2s ease-in-out
 		stroke: #B18223
+		position: absolute
+		top: 50%
+		right: 20px
+		transform: translate(0%, -50%)
 	cursor: pointer
 .block-11-tab__hidden
 	width: 911px
@@ -50,8 +55,6 @@
 	position: relative
 	font-weight: 400
 	transform-origin: top
-	transform: scaleY(0)
-	max-height: 0
 
 	p
 		background:   transparent

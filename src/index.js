@@ -16,6 +16,8 @@ import './js/quiz'
 import "./js/polzunki";
 import "./js/tabs";
 import "./js/мои слайдеры на js";
+import "./js/знания";
+import "./js/slike";
 
 
 
@@ -25,8 +27,10 @@ import './css/slick.css';
 
 
 import './css/fonts.css'
+import './sass/utils/slike.sass'
 
 import './sass/style.sass';
+
 
 // ==================
 

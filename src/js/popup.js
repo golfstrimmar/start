@@ -1,12 +1,12 @@
+'use strict'
 
-function initPopupCommon() {
+ export function initPopupCommon() {
     let Parent = document.querySelector('html');
     let singles = Array.from(document.getElementsByClassName('popup-init-js'))
 
     singles.forEach((cell) => {
-
 // ----------------------------------
-        function initCommon(){
+          function initCommon(){
             let id =cell.getAttribute("rel")
             let popup =     document.querySelector(id);
             popup.animate([
@@ -49,17 +49,17 @@ function initPopupCommon() {
                     document.querySelector("body").style.cssText= "overflow: visible"
                 }
             });
-
         }
+        initCommon();
 // -----------------------------
-        cell.addEventListener('click',(e) =>{
-            initCommon();
-        });
     })
 }
 
-initPopupCommon();
-
-
+let popups = document.querySelectorAll('.popup-init-js ');
+ popups.forEach((cell)=>{
+     cell.addEventListener('click',(e) =>{
+         initPopupCommon();
+     });
+ })
 
 
