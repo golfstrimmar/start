@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 // import Plyr from "plyr";
 
 // ==============================================
@@ -8,28 +8,36 @@ import $ from 'jquery';
 
 //========== рабочая часть=========================
 
+
+
+// {{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}
+
 import './js/common'
-import './js/scrolling'
+// import './js/scrolling'
 import './js/first'
 import './js/popup'
-import './js/quiz'
-import "./js/polzunki";
+import './js/MySwiper'
+import './js/form-js'
+// import './js/quiz'
+// import "./js/polzunki";
 import "./js/tabs";
-import "./js/мои слайдеры на js";
-import "./js/знания";
-import "./js/slike";
-
-
-
-import "./js/slick.js";
-import "./js/mySlick.js";
-import './css/slick.css';
-
+// import "./js/мои слайдеры на js";
 
 import './css/fonts.css'
-import './sass/utils/slike.sass'
-
 import './sass/style.sass';
+
+// {{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}
+//
+// import "./js/slick.js";
+// import "./js/mySlick.js";
+// import './css/slick.css';
+// import "./js/знания";
+// import "./js/slike";
+
+
+
+// import './sass/utils/slike.sass'
+
 
 
 // ==================

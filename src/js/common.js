@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 // import Plyr from "plyr";
 // ------------------------------------------------
 
@@ -8,11 +8,11 @@ import $ from "jquery";
 //     $(".cssload").delay(200).fadeOut("slow");
 // });
 
-$(document).ready(function (e) {
-    $("input").on("blur", function () {
-        $(this).next("i").css("opacity", "0")
-    });
-    });
+// $(document).ready(function (e) {
+//     $("input").on("blur", function () {
+//         $(this).next("i").css("opacity", "0")
+//     });
+//     });
 
 
 [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {

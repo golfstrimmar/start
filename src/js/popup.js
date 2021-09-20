@@ -55,11 +55,16 @@
     })
 }
 
-let popups = document.querySelectorAll('.popup-init-js ');
- popups.forEach((cell)=>{
-     cell.addEventListener('click',(e) =>{
-         initPopupCommon();
-     });
- })
+
+document.addEventListener('DOMContentLoaded', function(){
+    const popups = document.querySelectorAll('.popup-init-js ')
+    if(popups){
+        popups.forEach((cell)=>{
+            cell.addEventListener('click',(e) =>{
+                initPopupCommon();
+            });
+        })
+    }
+});
 
 

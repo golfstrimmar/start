@@ -49,11 +49,9 @@
 
 
     };
-
-let tabs = document.querySelectorAll('.tabs-container-js');
-if (tabs.length) {
+document.addEventListener('DOMContentLoaded', function(){
     MyTabs();
-}
+});
 
 
 

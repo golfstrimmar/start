@@ -2,6 +2,8 @@
 // import $ from "jquery";
 // ------------------------------------------------
 
+import {initPopupCommon} from "./popup";
+
 const Header = () => {
   const burger =   document.querySelector('.header__burger');
   const menu =  document.querySelector('.menu');
@@ -54,7 +56,13 @@ window.onresize = function () {
   }
   }
 
-};Header();
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+        Header();
+});
+
+
 
 
 // $(document).ready(function (e) {
